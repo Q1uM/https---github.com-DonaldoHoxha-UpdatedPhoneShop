@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Sign up</title>
+    <link rel="stylesheet" href="login&register.css">
+    <script src="login&register.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cover">
+            <div class="register_before box">
+                <h1>Sign up</h1>
+                <a href="">
+                    <h4>Don't have an account?</h4>
+                </a>
+
+            </div>
+            <div class="signupBox box hidden">
+                <h1>Sign up</h1>
+                <form action="signup.php" method="post">
+                    <input id="signupUsername" type="text" name="username" placeholder="Username" required>
+                    <input id="signupEmail" type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+                    <input type="text" name="shipping_address" placeholder="Shipping address" required>
+                    <input type="submit" value="Sign up">
+                </form>
+            </div>
+        </div>
+        <div class="cover">
+
+            <div class="loginBox box">
+                <h1>Login</h1>
+
+                <form action="login.php" method="post">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <div class="remember">
+                        <div>
+                            <input type="checkbox" name="remember" id="remember">
+                            <label for="remember">remember me</label>
+                        </div>
+                        <a href="#" class="forgot_psw"><span>forgot password?</span></a>
+                    </div>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <div class="login_after hidden box">
+                <h1>Log in</h1>
+                <a href="">
+                    <h4>Have an account?</h4>
+                </a>
+
+            </div>
+        </div>
+
+
+    </div>
+    </form>
+</body>
+
+</html>
