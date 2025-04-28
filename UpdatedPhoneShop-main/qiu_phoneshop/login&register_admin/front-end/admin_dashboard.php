@@ -65,25 +65,25 @@ if (!isset($_SESSION['username'])) {
             </div>
 
             <div class="sidebar">
-                <a href="#">
+                <a href="#" class="active" id="dashboard">
                     <span class="material-icons-sharp">
                         dashboard
                     </span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="#">
+                <a href="#" id="users">
                     <span class="material-icons-sharp">
                         person_outline
                     </span>
                     <h3>Users</h3>
                 </a>
-                <a href="#" class="active">
+                <a href="#" id="history">
                     <span class="material-icons-sharp">
                         receipt_long
                     </span>
                     <h3>History</h3>
                 </a>
-                <a href="#">
+                <a href="#" id="analytics">
                     <span class="material-icons-sharp">
                         insights
                     </span>

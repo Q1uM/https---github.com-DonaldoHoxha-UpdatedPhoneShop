@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2025 at 05:02 PM
+-- Generation Time: Apr 28, 2025 at 09:15 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,7 +39,9 @@ CREATE TABLE `administrator_user` (
 
 INSERT INTO `administrator_user` (`id`, `name`, `password`) VALUES
 (1, 'try', 'try'),
-(2, 'try', 'try');
+(2, 'try2', 'try'),
+(3, 'donald', '12345678'),
+(4, 'donald1', '$2y$10$0bw1CJ8azmJvnhWcAZ1Y/OQC7bJYaY6Wn4y/JE00FIjTR/KxEK7IO');
 
 -- --------------------------------------------------------
 
@@ -190,7 +192,8 @@ INSERT INTO `user` (`id`, `username`, `password`, `email`, `shipping_address`, `
 -- Indexes for table `administrator_user`
 --
 ALTER TABLE `administrator_user`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `name` (`name`);
 
 --
 -- Indexes for table `cart`
@@ -230,7 +233,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `administrator_user`
 --
 ALTER TABLE `administrator_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -277,4 +280,4 @@ COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_CO
